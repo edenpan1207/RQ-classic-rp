@@ -49,11 +49,10 @@
   .bg-primary {
       background-color: #37761D !important;
   }
-  
-  .bg-dark {
+  /*.bg-dark {
       background-color: #333;
       color: white;
-  }
+  }*/
   
   .text-faded {
       color: rgba(255, 255, 255, 0.7);
@@ -62,8 +61,7 @@
   section {
       padding: 50px 0;
   }
-  
-  aside {
+  /*aside {
       padding: 50px 0;
   }
   
@@ -74,6 +72,7 @@
   .padding-active {
       padding-bottom: 20px;
   }
+  */
   
   .navbar-default {
       background-color: white;
@@ -273,9 +272,11 @@
   }
   
   .data-box {
+      width: 100%;
       display: inline-block;
       position: absolute;
-      left: 25px;
+      left: 50%;
+      transform: translateX(-50%);
       bottom: -48%;
   }
   
@@ -316,6 +317,8 @@
   
   .fa-trophy {
       color: rgba(255, 255, 67, 1);
+      font-size: 42px;
+      padding-right: 10px;
   }
   /*
   .coach .coach-master {
@@ -353,17 +356,12 @@
   }
   
   .coach .coach-ranking {
-      text-align: center;
+      /*text-align: center;*/
   }
   
   .coach .coach-ranking ul {
       list-style: none;
       padding: 0;
-  }
-  
-  .coach .coach-ranking .btn-danger {
-      margin-top: 20px;
-      display: block;
   }
   
   .coach .coach-ranking ul li {
@@ -375,13 +373,55 @@
   }
   
   .coach .coach-ranking ul li span {
-      padding-left: 50px;
-      font-size: 24px;
+      font-size: 22px;
       color: #fff;
+      margin-right: 10px;
   }
   
-  .coach .coach-ranking ul li span .fa-star {
-      color: rgba(255, 255, 67, 0.8);
+  .coach .coach-ranking ul li span small {
+      font-size: 16px;
+  }
+  
+  .coach .coach-ranking ul li a {
+      margin-left: 20px;
+  }
+  
+  .ranking-box {
+      border: 2px solid #fff;
+      padding: 0px 10px;
+  }
+  
+  .result-index {
+      padding-right: 20px;
+  }
+  
+  .average-pace {
+      padding-left: 20px;
+  }
+  
+  .section-heading {
+      text-align: center;
+  }
+  
+  .section-heading span {
+      font-size: 16px;
+      display: inline-block;
+  }
+  
+  @media(max-width:990px) {
+      .average-pace {
+          display: none;
+      }
+      .training-index {
+        display: none;
+      }
+  }
+  @media(max-width:768px) {
+    .coach .coach-ranking ul li span {
+      font-size: 18px;
+      color: #fff;
+      margin-right: 6px;
+  }
   }
   
   .article-menu {
@@ -429,7 +469,7 @@
       transition: all 0.5s;
       background-color: #469525;
   }
-  
+  /*
   .race-toggle .btn-backout {
       border: 1px solid rgba(0, 0, 0, 0.6);
       background-color: #fff;
@@ -444,6 +484,17 @@
   .btn-backout:hover {
       transition: all 0.5s;
       background-color: #b1b1b1;
+  }
+  */
+  
+  .race-map img {
+      width: 100%;
+  }
+  
+  .carousel-control {
+      position: absolute;
+      top: 10%;
+      height: 80%;
   }
   /*header .header-content .header-content-inner a:hover {
       color: #fff !important;
@@ -479,7 +530,6 @@
       }
       .data-box {
           bottom: 27px;
-          left: 16px;
       }
       header .header-content .header-content-inner h1 {
           font-size: 48.5px;
@@ -494,21 +544,24 @@
   
   @media screen and (min-width:768px) and (max-width:768px) {
       .data-box {
-          bottom: -48%;
-          left: 16px;
+          bottom: -40%;
+          /*left: 16px;*/
       }
   }
   
   @media(max-width:650px) {
       header .header-content {
-      padding: 100px 15px 260px 15px;
-      width: 100%;
-      height: 100%;
-  }
+          padding: 100px 15px 260px 15px;
+          width: 100%;
+          height: 100%;
+      }
+      .data-box {
+          width: 100%;
+      }
       .data-box span {
-          display: block;
+          width: 40%;
+          display: inline-block;
           margin-bottom: 5px;
-          text-align: left;
       }
   }
   
@@ -522,9 +575,9 @@
           width: 60%;
       }
   }
-
+  
   @media(max-width:350px) {
-    header .header-content .header-content-inner h1 > span {
+      header .header-content .header-content-inner h1 > span {
           display: block;
           line-height: 1.5em;
       }
@@ -561,8 +614,7 @@
       padding-right: 0;
       padding-left: 0;
   }
-  
-  .btn-default {
+  /*.btn-default {
       color: #222222;
       background-color: white;
       border-color: white;
@@ -667,6 +719,7 @@
       color: #F05F40;
       background-color: white;
   }
+  */
   
   .btn {
       font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
