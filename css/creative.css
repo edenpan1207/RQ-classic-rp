@@ -49,11 +49,7 @@
   .bg-primary {
       background-color: #37761D !important;
   }
-  /*.bg-dark {
-      background-color: #333;
-      color: white;
-  }*/
-  
+
   .text-faded {
       color: rgba(255, 255, 255, 0.7);
   }
@@ -61,18 +57,6 @@
   section {
       padding: 50px 0;
   }
-  /*aside {
-      padding: 50px 0;
-  }
-  
-  .no-padding {
-      padding: 0;
-  }
-  
-  .padding-active {
-      padding-bottom: 20px;
-  }
-  */
   
   .navbar-default {
       background-color: white;
@@ -91,12 +75,6 @@
       font-style: oblique;
       font-size: 1.8em;
   }
-  /*
-  .navbar-default .navbar-header .navbar-brand:hover,
-  .navbar-default .navbar-header .navbar-brand:focus {
-    color: ; 
-  }
-  */
   
   .navbar-default .navbar-header .navbar-toggle {
       font-weight: 700;
@@ -122,13 +100,6 @@
       color: #fff !important;
       background-color: #2dc63a;
   }
-  /*
-  .navbar-default .nav > li.active > a:hover,
-  .navbar-default .nav > li.active > a:focus:hover {
-    color: #fff !important;
-    background-color: #2dc63a;color: #fff !important;
-  }
-  */
   
   @media (min-width: 768px) {
       .navbar-default {
@@ -289,26 +260,6 @@
       font-weight: 500;
       text-shadow: 0 1px 5px black;
   }
-  /*
-  .person-box {
-      position: absolute;
-      right: 50px;
-      bottom: -62px;
-      border: 3px solid rgba(55,118,29,0.5);
-      
-      padding: 15px 0;
-      width: 30%;
-  }
-  
-  .person-box span {
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;    
-    font-size: 36px;
-    font-weight: 500;
-    text-shadow: 1px 1px 2px black;
-  }
-  */
   
   .fa-flag,
   .fa-plus-square {
@@ -320,33 +271,7 @@
       font-size: 42px;
       padding-right: 10px;
   }
-  /*
-  .coach .coach-master {
-      border-bottom: 1px solid #fff;
-      padding: 20px;
-      background: #37761d;
-      background: -webkit-linear-gradient(rgba(55, 118, 29, 1), rgba(55, 118, 29, 0.7));
-      background: -o-linear-gradient(rgba(55, 118, 29, 1), rgba(55, 118, 29, 0.7));
-      background: -moz-linear-gradient(rgba(55, 118, 29, 1), rgba(55, 118, 29, 0.7));
-      background: linear-gradient(rgba(55, 118, 29, 1), rgba(55, 118, 29, 0.7));
-      color: #fff;
-  }
-  
-  .coach .coach-master h4 {
-      display: inline;
-      font-size: 26px;
-      font-weight: bold;
-      padding-left: 20px;
-  }
-  
-  .coach .coach-master span {
-      float: right;
-      font-size: 16px;
-      padding-top: 10px;
-      padding-right: 20px;
-  }
-  */
-  
+ 
   .coach .coach-ranking h3 {
       padding-top: 20px;
       padding-bottom: 10px;
@@ -370,6 +295,7 @@
       margin: 0 auto 10px auto;
       background-color: rgba(55, 118, 29, 0.7);
       box-shadow: 0 6px 8px -4px rgba(0, 0, 0, 0.5);
+      position: relative;
   }
   
   .coach .coach-ranking ul li span {
@@ -407,11 +333,25 @@
       font-size: 16px;
       display: inline-block;
   }
+
+  .btn-to-index {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 30%;
+  }
   .btn-danger:hover {
     background-color: rgba(217, 83, 79, 0.7) !important;
     color: #fff !important;
   }
   
+.fa-circle {
+  text-align: center;
+  display: block;
+  font-size: 5px;
+  padding-bottom: 8px;
+}
+
   @media(max-width:990px) {
       .average-pace {
           display: none;
@@ -474,23 +414,6 @@
       transition: all 0.5s;
       background-color: #469525;
   }
-  /*
-  .race-toggle .btn-backout {
-      border: 1px solid rgba(0, 0, 0, 0.6);
-      background-color: #fff;
-      color: rgba(0, 0, 0, 0.6);
-  }
-  
-  .btn-backout:hover,
-  .btn-backout:visited {
-      color: rgba(0, 0, 0, 0.6) !important;
-  }
-  
-  .btn-backout:hover {
-      transition: all 0.5s;
-      background-color: #b1b1b1;
-  }
-  */
   
   .race-map img {
       width: 100%;
@@ -501,12 +424,7 @@
       top: 10%;
       height: 80%;
   }
-  /*header .header-content .header-content-inner a:hover {
-      color: #fff !important;
-      background-color: color: rgba(255, 255, 255, 1);
-  }
-  */
-  
+ 
   @media (min-width: 768px) {
       header {
           height: 100%;
@@ -550,7 +468,6 @@
   @media screen and (min-width:768px) and (max-width:768px) {
       .data-box {
           bottom: -40%;
-          /*left: 16px;*/
       }
   }
   
@@ -619,112 +536,6 @@
       padding-right: 0;
       padding-left: 0;
   }
-  /*.btn-default {
-      color: #222222;
-      background-color: white;
-      border-color: white;
-      -webkit-transition: all 0.35s;
-      -moz-transition: all 0.35s;
-      transition: all 0.35s;
-  }
-  
-  .btn-default:hover,
-  .btn-default:focus,
-  .btn-default.focus,
-  .btn-default:active,
-  .btn-default.active,
-  .open > .dropdown-toggle.btn-default {
-      color: #222222;
-      background-color: #f2f2f2;
-      border-color: #ededed;
-  }
-  
-  .btn-default:active,
-  .btn-default.active,
-  .open > .dropdown-toggle.btn-default {
-      background-image: none;
-  }
-  
-  .btn-default.disabled,
-  .btn-default[disabled],
-  fieldset[disabled] .btn-default,
-  .btn-default.disabled:hover,
-  .btn-default[disabled]:hover,
-  fieldset[disabled] .btn-default:hover,
-  .btn-default.disabled:focus,
-  .btn-default[disabled]:focus,
-  fieldset[disabled] .btn-default:focus,
-  .btn-default.disabled.focus,
-  .btn-default[disabled].focus,
-  fieldset[disabled] .btn-default.focus,
-  .btn-default.disabled:active,
-  .btn-default[disabled]:active,
-  fieldset[disabled] .btn-default:active,
-  .btn-default.disabled.active,
-  .btn-default[disabled].active,
-  fieldset[disabled] .btn-default.active {
-      background-color: white !important;
-      border-color: white !important;
-  }
-  
-  .btn-default .badge {
-      color: white;
-      background-color: #222222;
-  }
-  
-  .btn-primary {
-      color: white;
-      background-color: #F05F40;
-      border-color: #F05F40;
-      -webkit-transition: all 0.35s;
-      -moz-transition: all 0.35s;
-      transition: all 0.35s;
-  }
-  
-  .btn-primary:hover,
-  .btn-primary:focus,
-  .btn-primary.focus,
-  .btn-primary:active,
-  .btn-primary.active,
-  .open > .dropdown-toggle.btn-primary {
-      color: white;
-      background-color: #ee4b28;
-      border-color: #ed431f;
-  }
-  
-  .btn-primary:active,
-  .btn-primary.active,
-  .open > .dropdown-toggle.btn-primary {
-      background-image: none;
-  }
-  
-  .btn-primary.disabled,
-  .btn-primary[disabled],
-  fieldset[disabled] .btn-primary,
-  .btn-primary.disabled:hover,
-  .btn-primary[disabled]:hover,
-  fieldset[disabled] .btn-primary:hover,
-  .btn-primary.disabled:focus,
-  .btn-primary[disabled]:focus,
-  fieldset[disabled] .btn-primary:focus,
-  .btn-primary.disabled.focus,
-  .btn-primary[disabled].focus,
-  fieldset[disabled] .btn-primary.focus,
-  .btn-primary.disabled:active,
-  .btn-primary[disabled]:active,
-  fieldset[disabled] .btn-primary:active,
-  .btn-primary.disabled.active,
-  .btn-primary[disabled].active,
-  fieldset[disabled] .btn-primary.active {
-      background-color: #F05F40;
-      border-color: #F05F40;
-  }
-  
-  .btn-primary .badge {
-      color: #F05F40;
-      background-color: white;
-  }
-  */
   
   .btn {
       font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
@@ -763,12 +574,6 @@
   .embed-responsive-16by9 {
       height: 400px;
   }
-  /*
-  .btn-xl {
-      padding: 15px 80px;
-      margin-right: 20px;
-  }
-  */
   
   @media (max-width:768px) {
       .embed-responsive-16by9 {
@@ -785,17 +590,6 @@
           padding: 15px 30px;
       }
   }
-  /*
-  @media (max-width:768px) {
-      .brand-title {
-          color: #37761D !important;
-      }
-  }
-  
-  .brand-title {
-      color: #37761D;
-  }
-  */
   
   .sr-icons {
       color: #37761D !important;
@@ -882,72 +676,6 @@
       background-color: #E7F0E9;
   }
   
-  .basicPrice .panel-body {
-      background-color: #02AFEE;
-      color: #fff;
-      border-radius: 6px 6px 0 0;
-      text-align: center;
-      font-size: 18px;
-  }
-  
-  .basicPrice .panel-body h3 {
-      display: inline-block;
-      padding-bottom: 5px;
-      font-size: 16px;
-      border-bottom: 2px solid #fff;
-  }
-  
-  .basicPrice .panel-body span {
-      display: block;
-      padding-top: 12px;
-      padding-bottom: 8px;
-      font-size: 48px;
-  }
-  
-  .vipPrice .panel-body {
-      background-color: #1E549F;
-      color: #fff;
-      border-radius: 6px 6px 0 0;
-      text-align: center;
-      font-size: 18px;
-  }
-  
-  .vipPrice .panel-body h3 {
-      display: inline-block;
-      padding-bottom: 5px;
-      font-size: 16px;
-      border-bottom: 2px solid #fff;
-  }
-  
-  .vipPrice .panel-body span {
-      font-size: 62px;
-  }
-  
-  .vasPrice .panel-body {
-      background-color: #081F37;
-      color: #fff;
-      border-radius: 6px 6px 0 0;
-      text-align: center;
-      font-size: 18px;
-  }
-  
-  .vasPrice .panel-body h3 {
-      display: inline-block;
-      padding-bottom: 5px;
-      font-size: 16px;
-      border-bottom: 2px solid #fff;
-  }
-  
-  .vasPrice .panel-body span {
-      font-size: 62px;
-  }
-  
-  .contact-form {
-      padding: 30px 15px;
-      border: 0px solid gray;
-      border-radius: 5px;
-      box-shadow: 0 1px 5px gray;
-  }
   
   .btn-press {
       background-color: rgba(55, 118, 29, 0.8);
