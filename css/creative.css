@@ -407,21 +407,26 @@
       font-size: 16px;
       display: inline-block;
   }
+  .btn-danger:hover {
+    background-color: rgba(217, 83, 79, 0.7) !important;
+    color: #fff !important;
+  }
   
   @media(max-width:990px) {
       .average-pace {
           display: none;
       }
       .training-index {
-        display: none;
+          display: none;
       }
   }
+  
   @media(max-width:768px) {
-    .coach .coach-ranking ul li span {
-      font-size: 18px;
-      color: #fff;
-      margin-right: 6px;
-  }
+      .coach .coach-ranking ul li span {
+          font-size: 18px;
+          color: #fff;
+          margin-right: 6px;
+      }
   }
   
   .article-menu {
