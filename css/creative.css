@@ -246,7 +246,7 @@
       width: 100%;
       display: inline-block;
       position: absolute;
-      left: 51%;
+      left: 50%;
       transform: translateX(-50%);
       bottom: -48%;
   }
