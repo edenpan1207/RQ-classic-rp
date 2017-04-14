@@ -553,6 +553,7 @@
       font-weight: 700;
       text-transform: uppercase;
   }
+
   
   ::-moz-selection {
       color: white;
@@ -649,6 +650,12 @@
       -webkit-background-size: center center;
       background-size: center bottom;
       background-position: right top;
+  }
+
+  @media(max-width:568px) {
+    .runner-one, .runner-two, .runner-three {
+      background-attachment: initial;
+  }
   }
   
   .item {
