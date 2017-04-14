@@ -49,7 +49,7 @@
   .bg-primary {
       background-color: #37761D !important;
   }
-
+  
   .text-faded {
       color: rgba(255, 255, 255, 0.7);
   }
@@ -246,9 +246,13 @@
       width: 100%;
       display: inline-block;
       position: absolute;
-      left: 50%;
+      left: 51%;
       transform: translateX(-50%);
       bottom: -48%;
+  }
+
+  .data-box br {
+    display: none;
   }
   
   .data-box span {
@@ -271,7 +275,7 @@
       font-size: 42px;
       padding-right: 10px;
   }
- 
+  
   .coach .coach-ranking h3 {
       padding-top: 20px;
       padding-bottom: 10px;
@@ -333,25 +337,26 @@
       font-size: 16px;
       display: inline-block;
   }
-
+  
   .btn-to-index {
-    display: inline-block;
-    position: absolute;
-    right: 20px;
-    top: 30%;
-  }
-  .btn-danger:hover {
-    background-color: rgba(217, 83, 79, 0.7) !important;
-    color: #fff !important;
+      display: inline-block;
+      position: absolute;
+      right: 20px;
+      top: 30%;
   }
   
-.fa-circle {
-  text-align: center;
-  display: block;
-  font-size: 5px;
-  padding-bottom: 8px;
-}
-
+  .btn-danger:hover {
+      background-color: rgba(217, 83, 79, 0.7) !important;
+      color: #fff !important;
+  }
+  
+  .fa-circle {
+      text-align: center;
+      display: block;
+      font-size: 5px;
+      padding-bottom: 8px;
+  }
+  
   @media(max-width:990px) {
       .average-pace {
           display: none;
@@ -417,6 +422,7 @@
   
   .race-map img {
       width: 100%;
+      height: auto;
   }
   
   .carousel-control {
@@ -424,7 +430,7 @@
       top: 10%;
       height: 80%;
   }
- 
+  
   @media (min-width: 768px) {
       header {
           height: 100%;
@@ -481,7 +487,7 @@
           width: 100%;
       }
       .data-box span {
-          width: 40%;
+          width: 45%;
           display: inline-block;
           margin-bottom: 5px;
       }
@@ -496,6 +502,9 @@
           font-size: 22px;
           width: 60%;
       }
+      .data-box br {
+        display: block;
+      } 
   }
   
   @media(max-width:350px) {
@@ -675,7 +684,6 @@
   #articles {
       background-color: #E7F0E9;
   }
-  
   
   .btn-press {
       background-color: rgba(55, 118, 29, 0.8);
