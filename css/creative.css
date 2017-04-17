@@ -250,9 +250,9 @@
       transform: translateX(-50%);
       bottom: -48%;
   }
-
+  
   .data-box br {
-    display: none;
+      display: none;
   }
   
   .data-box span {
@@ -272,20 +272,75 @@
   
   .fa-trophy {
       color: rgba(255, 255, 67, 1);
-      font-size: 42px;
+      /* font-size: 42px;*/
       padding-right: 10px;
   }
   
+  .table>tbody>tr>td,
+  .table>tbody>tr>th,
+  .table>tfoot>tr>td,
+  .table>tfoot>tr>th,
+  .table>thead>tr>td,
+  .table>thead>tr>th {
+      vertical-align: middle;
+      font-size: 16px;
+  }
+  
+  .table>thead>tr>th {
+      font-size: 22px;
+  }
+  
+  .table>tbody>tr>td:first-child {
+      font-size: 22px;
+      font-weight: bold;
+      color: #37761d;
+      padding-left: 10px;
+  }
+
+  .table>tbody>tr>td>i {
+      font-size: 28px;
+      font-weight: bold;
+      padding-left: 5px;
+  }
+  
+  .table>tbody>tr>td>.btn-default {
+      border: 2px solid #37761d;
+  }
+
+  .table>tbody>tr>td>.btn-danger {
+      margin-left: 8px;
+  }
+  .table>tbody>tr>td>.btn-danger:hover,
+  .table>tbody>tr>td>.btn-danger:active,
+  .table>tbody>tr>td>.btn-danger:visited {
+    transition: all 0.5s;
+      color: #fff !important;
+  }
+/*
+  .btn-cancel {
+    border: 2px solid gray;
+    border-radius: 30px;
+    padding: 3px 6px;
+    color: #fff;
+    background-color: gray;
+    vertical-align: inherit;
+    margin-left: 8px;
+  }
+  */
+  @media(max-width:568px) {
+      .ranking-detail {
+          display: none;
+      }
+      
+      
+  }
+  /*
   .coach .coach-ranking h3 {
       padding-top: 20px;
       padding-bottom: 10px;
       font-size: 26px;
       border-bottom: 3px solid #37761d;
       display: inline-block;
-  }
-  
-  .coach .coach-ranking {
-      /*text-align: center;*/
   }
   
   .coach .coach-ranking ul {
@@ -349,7 +404,7 @@
       background-color: rgba(217, 83, 79, 0.7) !important;
       color: #fff !important;
   }
-  
+
   .fa-circle {
       text-align: center;
       display: block;
@@ -373,6 +428,7 @@
           margin-right: 6px;
       }
   }
+  */
   
   .article-menu {
       list-style: none;
@@ -503,8 +559,8 @@
           width: 60%;
       }
       .data-box br {
-        display: block;
-      } 
+          display: block;
+      }
   }
   
   @media(max-width:350px) {
@@ -553,7 +609,6 @@
       font-weight: 700;
       text-transform: uppercase;
   }
-
   
   ::-moz-selection {
       color: white;
@@ -651,11 +706,16 @@
       background-size: center bottom;
       background-position: right top;
   }
-
+  
   @media(max-width:568px) {
-    .runner-one, .runner-two, .runner-three {
-      background-attachment: initial;
-  }
+      .runner-one,
+      .runner-two,
+      .runner-three {
+          background-attachment: initial;
+      }
+      .text-muted {
+          display: none;
+      }
   }
   
   .item {
