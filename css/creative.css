@@ -558,6 +558,12 @@
      text-align: center;
      margin-top: 0;
  }
+
+ .section-heading span {
+  display: inline-block;
+  float: right;
+  font-size: 18px;
+ }
  
  .service-box {
      width: 88%;
