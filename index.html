@@ -88,12 +88,6 @@
                     <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i></span>
                     <span>建議跑力：<br>36 +</span>
                 </div>
-                <!--  
-                <div class="person-box">
-                    <span>負責人</span>
-                    <span>高志明</span>
-                </div>
-                -->
             </div>
         </div>
     </header>
@@ -117,15 +111,19 @@
             </div>
         </div>
     </section>
-    <section id="services" style="padding:0;" class="race-map">
-        <img src="img/gmap.png" alt="賽道地圖" class="img-responsive">
+    <section id="services" class="race-map">
+        <div class="race-map-download">
+            <a href="#" class="btn btn-default pull-right"><i class="fa fa-download" aria-hidden="true"></i> 下載<span>GPX</span></a>
+            <a href="#" class="btn btn-default pull-right"><i class="fa fa-download" aria-hidden="true"></i> 下載<span>FIT</span></a>
+        </div>
+        <iframe frameBorder="0" scrolling="no" src="https://www.wikiloc.com/wikiloc/spatialArtifacts.do?event=view&id=17303301&measures=on&title=off&near=off&images=off&maptype=S" width="500" height="700"></iframe>
+        <div style="background-color:#fff;color:#777;font-size:11px;line-height:0;">Powered by <a style="color:#06d;font-size:11px;line-height:0;" target="_blank" href="https://www.wikiloc.com">Wikiloc</a></div>
     </section>
-    <section id="coach">
+    <section id="coach" style="padding-top: 0">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 section-heading">
-                    <h2 class="section-heading-function text-center"><a href="#" target="_blank"><i class="fa fa-rocket" aria-hidden="true"></i> 最新競賽</a></h2>
-                    <!-- <span><a href="#"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> 點此看更詳細排行</a></span> -->
+                    <h2 class="section-heading-function"><a href="#" target="_blank"><i class="fa fa-rocket" aria-hidden="true"></i> 最新競賽 </a><small> 2017 / 4 / 20</small></h2>
                     <hr>
                 </div>
             </div>
@@ -138,7 +136,6 @@
                                     <th>排行</th>
                                     <th>姓名</th>
                                     <th>時間</th>
-                                    <th>日期</th>
                                     <th class="ranking-detail">平均配速</th>
                                     <th class="ranking-detail">訓練指數</th>
                                     <th></th>
@@ -149,151 +146,58 @@
                                     <td><i class="fa fa-trophy" aria-hidden="true"></i></td>
                                     <td>高志明</td>
                                     <td>1:32:50</td>
-                                    <td>2017/4/20</td>
                                     <td class="ranking-detail">123</td>
                                     <td class="ranking-detail">123</td>
-                                    <td><a href="#" class="btn btn-default">前往紀錄</a></td>
+                                    <td><a href="#" class="btn btn-default"><span>前往紀錄</span><i class="fa fa-paper-plane" aria-hidden="true"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
                                     <td>徐國峰</td>
                                     <td>1:38:40</td>
-                                    <td>2017/4/20</td>
                                     <td class="ranking-detail">123</td>
                                     <td class="ranking-detail">123</td>
-                                    <td><a href="#" class="btn btn-default">前往紀錄</a></td>
+                                    <td><a href="#" class="btn btn-default"><span>前往紀錄</span><i class="fa fa-paper-plane" aria-hidden="true"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
                                     <td>羅譽寅</td>
                                     <td>1:41:50</td>
-                                    <td>2017/4/20</td>
                                     <td class="ranking-detail">123</td>
                                     <td class="ranking-detail">123</td>
-                                    <td><a href="#" class="btn btn-default">前往紀錄</a></td>
+                                    <td><a href="#" class="btn btn-default"><span>前往紀錄</span><i class="fa fa-paper-plane" aria-hidden="true"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
                                     <td>陳政漢</td>
                                     <td>1:42:50</td>
-                                    <td>2017/4/20</td>
                                     <td class="ranking-detail">123</td>
                                     <td class="ranking-detail">123</td>
-                                    <td><a href="#" class="btn btn-default">前往紀錄</a></td>
+                                    <td><a href="#" class="btn btn-default"><span>前往紀錄</span><i class="fa fa-paper-plane" aria-hidden="true"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
                                     <td>余文彥</td>
                                     <td>1:43:50</td>
-                                    <td>2017/4/20</td>
                                     <td class="ranking-detail">123</td>
                                     <td class="ranking-detail">123</td>
-                                    <td><a href="#" class="btn btn-default">前往紀錄</a></td>
+                                    <td><a href="#" class="btn btn-default"><span>前往紀錄</span><i class="fa fa-paper-plane" aria-hidden="true"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>213</td>
                                     <td>叉傑克</td>
                                     <td>1:32:50</td>
-                                    <td>2017/4/20</td>
                                     <td class="ranking-detail">123</td>
                                     <td class="ranking-detail">123</td>
-                                    <td><a href="#" class="btn btn-default">前往紀錄</a><a href="#" class="btn btn-danger btn-cancel">退出賽道</a></td>
+                                    <td><a href="#" class="btn btn-default btn-cancel"><span>退出賽道</span><i class="fa fa-times-circle" aria-hidden="true"></i></a></td>
                                 </tr>
                             </thbody>
                         </table>
                     </div>
-                    <!-- <div class="coach-ranking">
-                        <ul>
-                            <li>
-                                <i class="fa fa-trophy" aria-hidden="true"></i>
-                                <span class="result-index">高志明</span>
-                                <span class="result-time">
-                                    <small>時間 </small> 1:32:50
-                                </span>
-                                <span class="result-date">
-                                    <small>日期 </small> 2017/4/20
-                                </span>
-                                <span class="average-pace"><small>平均配速 </small> 123</span>
-                                <span class="training-index"><small>訓練指數 </small> 123</span>
-                                <a href="#" class="btn btn-danger btn-to-index">前往紀錄</a>
-                            </li>
-                            <li>
-                                <span class="ranking-box">2</span>
-                                <span class="result-index">徐國峰</span>
-                                <span class="result-time">
-                                    <small>時間 </small> 1:32:50
-                                </span>
-                                <span class="result-date">
-                                    <small>日期 </small> 2017/4/20
-                                </span>
-                                <span class="average-pace"><small>平均配速 </small> 123</span>
-                                <span class="training-index"><small>訓練指數 </small> 123</span>
-                                <a href="#" class="btn btn-danger btn-to-index">前往紀錄</a>
-                            </li>
-                            <li>
-                                <span class="ranking-box">3</span>
-                                <span class="result-index">徐國峰</span>
-                                <span class="result-time">
-                                    <small>時間 </small> 1:32:50
-                                </span>
-                                <span class="result-date">
-                                    <small>日期 </small> 2017/4/20
-                                </span>
-                                <span class="average-pace"><small>平均配速 </small> 123</span>
-                                <span class="training-index"><small>訓練指數 </small> 123</span>
-                                <a href="#" class="btn btn-danger btn-to-index">前往紀錄</a>
-                            </li>
-                            <li>
-                                <span class="ranking-box">4</span>
-                                <span class="result-index">徐國峰</span>
-                                <span class="result-time">
-                                    <small>時間 </small> 1:32:50
-                                </span>
-                                <span class="result-date">
-                                    <small>日期 </small> 2017/4/20
-                                </span>
-                                <span class="average-pace"><small>平均配速 </small> 123</span>
-                                <span class="training-index"><small>訓練指數 </small> 123</span>
-                                <a href="#" class="btn btn-danger btn-to-index">前往紀錄</a>
-                            </li>
-                            <li>
-                                <span class="ranking-box">5</span>
-                                <span class="result-index">徐國峰</span>
-                                <span class="result-time">
-                                    <small>時間 </small> 1:32:50
-                                </span>
-                                <span class="result-date">
-                                    <small>日期 </small> 2017/4/20
-                                </span>
-                                <span class="average-pace"><small>平均配速 </small> 123</span>
-                                <span class="training-index"><small>訓練指數 </small> 123</span>
-                                <a href="#" class="btn btn-danger btn-to-index">前往紀錄</a>
-                            </li>
-                            <i class="fa fa-circle" aria-hidden="true"></i>
-                            <i class="fa fa-circle" aria-hidden="true"></i>
-                            <i class="fa fa-circle" aria-hidden="true"></i>
-                            <li>
-                                <span class="ranking-box">213</span>
-                                <span class="result-index">叉傑克</span>
-                                <span class="result-time">
-                                    <small>時間 </small> 1:32:50
-                                </span>
-                                <span class="result-date">
-                                    <small>日期 </small> 2017/4/20
-                                </span>
-                                <span class="average-pace"><small>平均配速 </small> 123</span>
-                                <span class="training-index"><small>訓練指數 </small> 123</span>
-                                <a href="#" class="btn btn-danger btn-to-index">前往紀錄</a>
-                            </li>
-                        </ul>
-                    </div> -->
                 </div>
             </div>
-
             <div class="row">
                 <div class="col-md-12 section-heading">
                     <h2 class="section-heading-function text-center"><a href="#" target="_blank"><i class="fa fa-flag" aria-hidden="true"></i> 歷史排行</a></h2>
-                    <!-- <span><a href="#"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> 點此看更詳細排行</a></span> -->
                     <hr>
                 </div>
             </div>
@@ -320,7 +224,7 @@
                                     <td>2017/4/20</td>
                                     <td class="ranking-detail">123</td>
                                     <td class="ranking-detail">123</td>
-                                    <td><a href="#" class="btn btn-default">前往紀錄</a></td>
+                                    <td><a href="#" class="btn btn-default"><span>前往紀錄</span><i class="fa fa-paper-plane" aria-hidden="true"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -329,7 +233,7 @@
                                     <td>2017/4/20</td>
                                     <td class="ranking-detail">123</td>
                                     <td class="ranking-detail">123</td>
-                                    <td><a href="#" class="btn btn-default">前往紀錄</a></td>
+                                    <td><a href="#" class="btn btn-default"><span>前往紀錄</span><i class="fa fa-paper-plane" aria-hidden="true"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
@@ -338,7 +242,7 @@
                                     <td>2017/4/20</td>
                                     <td class="ranking-detail">123</td>
                                     <td class="ranking-detail">123</td>
-                                    <td><a href="#" class="btn btn-default">前往紀錄</a></td>
+                                    <td><a href="#" class="btn btn-default"><span>前往紀錄</span><i class="fa fa-paper-plane" aria-hidden="true"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
@@ -347,7 +251,7 @@
                                     <td>2017/4/20</td>
                                     <td class="ranking-detail">123</td>
                                     <td class="ranking-detail">123</td>
-                                    <td><a href="#" class="btn btn-default">前往紀錄</a></td>
+                                    <td><a href="#" class="btn btn-default"><span>前往紀錄</span><i class="fa fa-paper-plane" aria-hidden="true"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
@@ -356,7 +260,7 @@
                                     <td>2017/4/20</td>
                                     <td class="ranking-detail">123</td>
                                     <td class="ranking-detail">123</td>
-                                    <td><a href="#" class="btn btn-default">前往紀錄</a></td>
+                                    <td><a href="#" class="btn btn-default"><span>前往紀錄</span><i class="fa fa-paper-plane" aria-hidden="true"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>213</td>
@@ -365,109 +269,16 @@
                                     <td>2017/4/20</td>
                                     <td class="ranking-detail">123</td>
                                     <td class="ranking-detail">123</td>
-                                    <td><a href="#" class="btn btn-default">前往紀錄</a><a href="#" class="btn btn-danger btn-cancel">退出賽道</a></td>
+                                    <td><a href="#" class="btn btn-default btn-cancel"><span>退出賽道</span><i class="fa fa-times-circle" aria-hidden="true"></i></a></td>
                                 </tr>
                             </thbody>
                         </table>
                     </div>
-                    <!-- <div class="coach-ranking">
-                        <ul>
-                            <li>
-                                <i class="fa fa-trophy" aria-hidden="true"></i>
-                                <span class="result-index">高志明</span>
-                                <span class="result-time">
-                                    <small>時間 </small> 1:32:50
-                                </span>
-                                <span class="result-date">
-                                    <small>日期 </small> 2017/4/20
-                                </span>
-                                <span class="average-pace"><small>平均配速 </small> 123</span>
-                                <span class="training-index"><small>訓練指數 </small> 123</span>
-                                <a href="#" class="btn btn-danger btn-to-index">前往紀錄</a>
-                            </li>
-                            <li>
-                                <span class="ranking-box">2</span>
-                                <span class="result-index">徐國峰</span>
-                                <span class="result-time">
-                                    <small>時間 </small> 1:32:50
-                                </span>
-                                <span class="result-date">
-                                    <small>日期 </small> 2017/4/20
-                                </span>
-                                <span class="average-pace"><small>平均配速 </small> 123</span>
-                                <span class="training-index"><small>訓練指數 </small> 123</span>
-                                <a href="#" class="btn btn-danger btn-to-index">前往紀錄</a>
-                            </li>
-                            <li>
-                                <span class="ranking-box">3</span>
-                                <span class="result-index">徐國峰</span>
-                                <span class="result-time">
-                                    <small>時間 </small> 1:32:50
-                                </span>
-                                <span class="result-date">
-                                    <small>日期 </small> 2017/4/20
-                                </span>
-                                <span class="average-pace"><small>平均配速 </small> 123</span>
-                                <span class="training-index"><small>訓練指數 </small> 123</span>
-                                <a href="#" class="btn btn-danger btn-to-index">前往紀錄</a>
-                            </li>
-                            <li>
-                                <span class="ranking-box">4</span>
-                                <span class="result-index">徐國峰</span>
-                                <span class="result-time">
-                                    <small>時間 </small> 1:32:50
-                                </span>
-                                <span class="result-date">
-                                    <small>日期 </small> 2017/4/20
-                                </span>
-                                <span class="average-pace"><small>平均配速 </small> 123</span>
-                                <span class="training-index"><small>訓練指數 </small> 123</span>
-                                <a href="#" class="btn btn-danger btn-to-index">前往紀錄</a>
-                            </li>
-                            <li>
-                                <span class="ranking-box">5</span>
-                                <span class="result-index">徐國峰</span>
-                                <span class="result-time">
-                                    <small>時間 </small> 1:32:50
-                                </span>
-                                <span class="result-date">
-                                    <small>日期 </small> 2017/4/20
-                                </span>
-                                <span class="average-pace"><small>平均配速 </small> 123</span>
-                                <span class="training-index"><small>訓練指數 </small> 123</span>
-                                <a href="#" class="btn btn-danger btn-to-index">前往紀錄</a>
-                            </li>
-                            <i class="fa fa-circle" aria-hidden="true"></i>
-                            <i class="fa fa-circle" aria-hidden="true"></i>
-                            <i class="fa fa-circle" aria-hidden="true"></i>
-                            <li>
-                                <span class="ranking-box">213</span>
-                                <span class="result-index">叉傑克</span>
-                                <span class="result-time">
-                                    <small>時間 </small> 1:32:50
-                                </span>
-                                <span class="result-date">
-                                    <small>日期 </small> 2017/4/20
-                                </span>
-                                <span class="average-pace"><small>平均配速 </small> 123</span>
-                                <span class="training-index"><small>訓練指數 </small> 123</span>
-                                <a href="#" class="btn btn-danger btn-to-index">前往紀錄</a>
-                            </li>
-                        </ul>
-                    </div> -->
                 </div>
             </div>
         </div>
     </section>
     <section class="result" id="student" style="padding: 0;">
-        <!-- <div class="container"> -->
-        <!-- <div class="row"> 
-                <div class="col-md-12">
-                    <h2 class="section-heading-function text-center">心得分享</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-            -->
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -562,11 +373,13 @@
     <script src="js/wow.js"></script>
     <script src="js/creative.js"></script>
     <script>
-    /*$('.carousel').carousel({
-                                    interval: 3000
-                                })
+    $('.carousel').carousel({
+        interval: 3000
+    })
 
-                                new WOW().init();
+    $(function() {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
     </script>
 </body>
 
