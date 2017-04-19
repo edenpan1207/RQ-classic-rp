@@ -1,6 +1,4 @@
 (function($) {
-    "use strict"; // Start of use strict
-
     $('a.brand-title').click(function(e) {
         e.preventDefault();
         $('html,body').stop().animate({ scrollTop: 0 }, 1250, 'easeInOutExpo');
@@ -35,30 +33,5 @@
         }
     })
 
-    // Initialize and Configure Scroll Reveal Animation
-    window.sr = ScrollReveal();
-    sr.reveal('.sr-icons', {
-        duration: 600,
-        scale: 0.3,
-        distance: '0px'
-    }, 200);
-    sr.reveal('.sr-button', {
-        duration: 1000,
-        delay: 200
-    });
-    sr.reveal('.sr-contact', {
-        duration: 600,
-        scale: 0.3,
-        distance: '0px'
-    }, 300);
-    sr.reveal('.sr-coach', { 
-        duration: 600 
-    }, 50);
-
-    $('.list-group-item > ul').hide();
-    $('.list-group-item > h4').click(function() {
-        $(this).parent().find('ul').slideToggle();
-        $(this).parent().siblings().find('ul').slideUp();
-    })
 
 })(jQuery);
