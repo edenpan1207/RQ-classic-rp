@@ -1,0 +1,156 @@
+/***  raceindex.html page  ***/
+
+
+/* mixin and variablity */
+
+@mixin ipad {
+    @media(max-width: 768px) {
+        @content
+    }
+}
+
+@mixin l-phone {
+    @media(max-width: 568px) {
+        @content
+    }
+}
+
+@mixin m-phone {
+    @media(max-width: 375px) {
+        @content
+    }
+}
+
+@mixin s-phone {
+    @media(max-width: 320px) {
+        @content
+    }
+}
+
+$rqcolor: #37761d;
+$bg-tc: #fff;
+@mixin borderRange($bor, $pad, $color, $fz) {
+    border: $bor solid $rqcolor;
+    padding: $pad;
+    color: $color;
+    font-size: $fz;
+}
+
+@mixin textStyle($fz, $fw, $color) {
+    font-size: $fz;
+    font-weight: $fw;
+    color: $color;
+}
+
+
+/** start here **/
+
+.jumbotron h1 {
+	font-family: "Microsoft JhengHei";
+	padding-top: 20px;
+	color: $rqcolor;
+}
+
+.section-part {
+    margin-bottom: 30px;
+    position: relative;
+    .intro-race {
+        box-shadow: 8px 12px 12px -5px gray;
+        background-color: rgba(0,0,0,0.8);
+        &:hover .hover-word {
+        		transition: all 1s;
+            	opacity: 1;
+            }
+        &:hover .intro-race-box {
+        	transition: all 1s;
+        	opacity: 0.3;
+        }
+        > a {
+            text-decoration: none;
+            .intro-race-box {
+            	background-color: rgba(0,0,0,1);
+                padding: 10px 30px;
+                background-image: url(../img/run2.jpg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: center;
+                
+                &:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+                h2 {
+                    display: inline-block;
+                    padding-right: 30px;
+                    text-shadow: 2px 2px 5px $rqcolor;
+                    @include textStyle(60px, bold, $bg-tc)
+                }
+                > span {
+                    background-color: #EE2E2E;
+                    padding: 8px 8px 5px 8px;
+                    border-radius: 15px;
+                    @include textStyle(24px, bold, $bg-tc) i {
+                        font-size: 35px;
+                    }
+                }
+                .situation-list {
+                    margin-top: 25px;
+                    > span {
+                        margin-right: 10px;
+                        background-color: gray;
+                        @include borderRange(2px, 8px, $bg-tc, 15px);
+                    }
+                }
+                h3 {
+                    float: right;
+                    margin-bottom: 21px;
+                    @include borderRange(5px, 10px, $bg-tc, 36px)
+                }
+            }
+        }
+    }
+    .hover-word {
+    	position: absolute;
+    	top: 54%;
+    	left: 39%;
+    	transform: translateX(-50%);
+    	transform: translateY(-50%);
+    	opacity: 0;
+    	p {
+    		@include borderRange(5px,15px,#fff,35px)
+    		border-color: #fff;
+    		padding: 15px 50px;
+    	}
+    }
+}
+
+/***  第二版  ***/
+
+.section-part {
+    h2 {
+        > a {
+            display: inline-block;
+            //padding-right: 50px;
+            //text-shadow: 1px 1px 3px gray;
+            @include textStyle(36px, bold, $rqcolor)
+        }
+    }
+    .intro-race {
+        > a {
+            .intro-adjust {
+                padding: 5px 30px;
+                padding-top: 30px;
+                .intro-adjust-star {
+                    display: inline-block;
+                    margin-top: 50px;
+                    i {}
+                }
+                .situation-list {
+                    > span {}
+                }
+                h3 {}
+            }
+        }
+    }
+}

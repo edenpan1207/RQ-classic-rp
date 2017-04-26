@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/***  raceindex.html page  ***/
+/* mixin and variablity */
+/** start here **/
+.jumbotron h1 {
+  font-family: "Microsoft JhengHei";
+  padding-top: 20px;
+  color: #37761d; }
+
+.section-part {
+  margin-bottom: 30px;
+  position: relative; }
+  .section-part .intro-race {
+    box-shadow: 8px 12px 12px -5px gray;
+    background-color: rgba(0, 0, 0, 0.8); }
+    .section-part .intro-race:hover .hover-word {
+      transition: all 1s;
+      opacity: 1; }
+    .section-part .intro-race:hover .intro-race-box {
+      transition: all 1s;
+      opacity: 0.3; }
+    .section-part .intro-race > a {
+      text-decoration: none; }
+      .section-part .intro-race > a .intro-race-box {
+        background-color: black;
+        padding: 10px 30px;
+        background-image: url(../img/run2.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center; }
+        .section-part .intro-race > a .intro-race-box:after {
+          content: "";
+          display: table;
+          clear: both; }
+        .section-part .intro-race > a .intro-race-box h2 {
+          display: inline-block;
+          padding-right: 30px;
+          text-shadow: 2px 2px 5px #37761d;
+          font-size: 60px;
+          font-weight: bold;
+          color: #fff; }
+        .section-part .intro-race > a .intro-race-box > span {
+          background-color: #EE2E2E;
+          padding: 8px 8px 5px 8px;
+          border-radius: 15px;
+          font-size: 24px;
+          font-weight: bold;
+          color: #fff; }
+          .section-part .intro-race > a .intro-race-box > span i {
+            font-size: 35px; }
+        .section-part .intro-race > a .intro-race-box .situation-list {
+          margin-top: 25px; }
+          .section-part .intro-race > a .intro-race-box .situation-list > span {
+            margin-right: 10px;
+            background-color: gray;
+            border: 2px solid #37761d;
+            padding: 8px;
+            color: #fff;
+            font-size: 15px; }
+        .section-part .intro-race > a .intro-race-box h3 {
+          float: right;
+          margin-bottom: 21px;
+          border: 5px solid #37761d;
+          padding: 10px;
+          color: #fff;
+          font-size: 36px; }
+  .section-part .hover-word {
+    position: absolute;
+    top: 54%;
+    left: 39%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0; }
+    .section-part .hover-word p {
+      border: 5px solid #37761d;
+      padding: 15px;
+      color: #fff;
+      font-size: 35px;
+      border-color: #fff;
+      padding: 15px 50px; }
+
+/***  第二版  ***/
+.section-part h2 > a {
+  display: inline-block;
+  font-size: 36px;
+  font-weight: bold;
+  color: #37761d; }
+
+.section-part .intro-race > a .intro-adjust {
+  padding: 5px 30px;
+  padding-top: 30px; }
+  .section-part .intro-race > a .intro-adjust .intro-adjust-star {
+    display: inline-block;
+    margin-top: 50px; }
